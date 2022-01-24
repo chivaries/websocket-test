@@ -1,4 +1,4 @@
-package com.example.websocketdemo.model;
+package com.example.lecture1.websocket.model;
 
 /**
  * Created by rajeevkumarsingh on 24/07/17.

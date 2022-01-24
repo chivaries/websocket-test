@@ -23,6 +23,8 @@ function connect(event) {
         usernamePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
+        // connect() 함수에서는 Sockjs와 stomp client를 이용하여 Spring Boot에서 구성한 / ws 엔드 포인트에 연결
+        // 성공적으로 연결되었다면 connectCallback함수로 작성한 onConnected() 함수에서 동작
         var socket = new SockJS('/ws');
         stompClient = Stomp.over(socket);
 
